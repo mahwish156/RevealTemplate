@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- font awesome.cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title> REVEAL</title>
+
+    <style type="text/css">
+      .nav1{
+       color: black;
+       }
+
+       .nav1:hover{
+        color: blueviolet;
+      }
+
+      .hd{
+        background-color: lightgrey;
+        /*font-size: 90px;*/
+        color: darkblue;
+        margin-top: 20px;
+      }
+
+     .srv{
+        padding: 20px;
+        border-spacing: 20px;
+        border: 0.5px;
+        opacity: 0.5;
+      }
+
+      .srv:hover{
+        opacity: 1;
+
+      }
+
+      .cln{
+        opacity: 0.5;
+      }
+
+      .cln:hover{
+        opacity: 1;
+      }
+
+      .btn1{
+        align-items: center;
+        justify-content: center;
+        margin-left: 40%;
+      }
+
+      .grd{
+        padding: 20px;
+        /*margin: 5px;*/
+      }
+
+      @keyframes{
+        
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="navbar-light row">
+      <div class="col"> <i class='fas fa-envelope-square' style="font-size:10px; margin-left: 45px;"></i> contact@example.com </div>
+      <div class="col"> <i class='fas fa-mobile-alt' style="font-size: 10px; margin-left: 20px;"></i> +1 5589 55488 55 </div>
+      <div class="col"> <i class='fa sm1 fa-brands fa-twitter' style="font-size: 20px; margin-right: 50px;"></i> 
+      <i class='fa sm1 fa-brands fa-facebook' style="font-size: 20px; margin-right: 60px;"></i>
+      <i class='fa sm1 fa-brands fa-instagram' style="font-size: 20px; margin-right: 70px;"></i>
+      <i class='fa sm1 fa-brands fa-youtube' style="font-size: 20px; margin-right: 80px;"></i> </div>
+
+    </div>
+
+    <nav class="navbar navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="data:image/png;base64,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" alt="" width="80px" height="80px">
+    </a>
+
+    <ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#"><b> Home </b></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link nav1" href="#"><b> About </b></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link nav1" href="#"><b> Services </b></a>
+  </li>
+ 
+  <li class="nav-item">
+    <a class="nav-link nav1" href="#"><b> Portfolio </b></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link nav1" href="#"><b> Team </b></a>
+  </li>
+    <a class="nav-link nav1" href="#"><b> Contact </b></a>
+  </li>
+
+<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle nav1" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b>
+            Dropdown</b></a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#"> Dropdown 1 </a></li>
+            <li><a class="dropdown-item" href="#"> Dropdown 2 </a></li>
+            <li><a class="dropdown-item" href="#"> Dropdown 3 </a></li>
+            <li><a class="dropdown-item" href="#"> Dropdown 4 </a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"> Discount Offer </a></li>
+          </ul>
+        </li>
+      </ul>
+  </div>
+</nav>
+
+ <div class="container-fluid hd" align="center">
+  <h2><marquee><b style="font-size: 90px;"> Making </marquee></b>
+ <marquee> <u style=" font-size:90px; color: darkcyan"> your ideas </u></marquee><br>
+     <marquee><b style="font-size: 90px;"> happen! </b></marquee>
+</h2>
+<br>
+<br>
+   <div>
+     <button type="button" class="btn btn-primary btn-lg"> Get Started </button>
+<button type="button" class="btn btn-secondary btn-lg"> Our Projects </button>
+   </div>
+ </div>
+ <br><br><br>
+
+ <div>
+   <div class="row">
+     <div class="col">
+      <img src="https://bootstrapmade.com/demo/templates/Reveal/assets/img/about-img.jpg"> </div>
+    <div class="col"> <h3 style="font-size: 40px; color: darkblue; margin-top: 20px;"> Lorem ipsum dolor sit amet, consectetur adipiscing </h3>
+       <i style="font-style: sans-serif; font-size: 20px;"> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</i><br>
+       <ul style="font-size: 15px;">
+         <li> Ullamco laboris nisi ut aliquip ex ea commodo consequat. </li><br>
+         <li> Duis aute irure dolor in reprehenderit in voluptate velit. </li><br>
+         <li> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur. </li>
+       </ul>
+    </div>
+   </div>
+ </div>
+<br><br><br>
+ 
+ <div>
+   <h2 style="font-size:45px; color: royalblue; margin-left: 30px;"> SERVICES </h2><br>
+   <p style="margin-left: 20px;"> Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore </p></div>
+
+   <div class="container">
+  <div class="row">
+    <div class=" srv col-md-6 col-sm-12">
+      <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQH91_fra3XgmOwyK3iivrlLYC9uZko-ybGi_16s16rPZeU6k9J" width="30px" height="30px"><br><br>
+      <h4 style="color:royalblue;"> Lorem Ipsum </h4>
+      <p> Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident etiro rabeta lingo. </p>
+    </div>
+    <div class="srv col-md-6 col-sm-12">
+     <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSw-Uro0rk2_kuc7TxHaZpzZaYzVrF1qtrg9jaZ7Zd47vLQswzS" width="30px" height="30px"><br><br>
+     <h4 style="color:royalblue;"> Dolor Sitema </h4>
+     <p> Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata nodera clas. </p>
+    </div>
+
+    <div class="srv col-md-6 col-sm-12">
+      <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwYW0WpqlnuCaO6vW1aFOjVdKxaP_IrwfhHUOSZcpx1GfubfyM" width="30px" height="30px"><br><br>
+      <h4 style="color:royalblue;"> Sed ut perspiciatis </h4>
+      <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur trinige zareta lobur trade. </p>
+    </div>
+    <div class="srv col-md-6 col-sm-12">
+     <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbybADu_hOmg7XYAY4he-MvIpFFHJdDTd4K8xPGd0eP3g_3Mrx" width="40px" height="40px"><br><br>
+     <h4 style="color:royalblue;"> Magni Dolores </h4>
+     <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum rideta zanox satirente madera </p>
+    </div>
+
+  </div>
+</div>
+
+<div>
+  <h2 style="font-size:45px; color: darkblue; margin-left: 30px;"> CLIENTS </h2><br>
+ 
+ <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+
+   <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+     <div class="col cln">
+       <div class="p-3 border bg-light"><img src="https://bootstrapmade.com/demo/templates/Reveal/assets/img/clients/client-7.png" width="100%"></div>
+     </div>
+     <div class="col cln">
+       <div class="p-3 border bg-light"><img src="https://bootstrapmade.com/demo/templates/Reveal/assets/img/clients/client-2.png" width="100%"></div>
+     </div>
+     <div class="col cln">
+       <div class="p-3 border bg-light"><img src="https://bootstrapmade.com/demo/templates/Reveal/assets/img/clients/client-1.png" width="100%"></div>
+     </div>
+     <div class="col cln">
+       <div class="p-3 border bg-light"><img src="https://bootstrapmade.com/demo/templates/Reveal/assets/img/clients/client-3.png" width="100%"></div>
+     </div>
+     <div class="col cln">
+       <div class="p-3 border bg-light"><img src="https://bootstrapmade.com/demo/templates/Reveal/assets/img/clients/client-4.png" width="100%"></div>
+     </div>
+     
+     </div>
+  </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="container" style="font-size: 35px; color: darkcyan;">
+      <b>OUR PORTFOLIO</b> <br><br>
+      <p style="font-size: 15px; color: black;"><i> Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore </i></p>
+    </div>
+    <br><br>
+
+    <div class="btn-group btn1">
+  <a href="#" class="btn btn-primary active" aria-current="page">Active link</a>
+  <a href="#" class="btn btn-info">Link</a>
+  <a href="#" class="btn btn-secondary">Link</a>
+  <a href="#" class="btn btn-success">Link</a>
+</div>
+<br><br>
+
+     <div class="container">
+  <div class="row">
+    <div class="col col-md-4 col-sm-6 col-12 grd ">
+      <img src="https://bootstrapmade.com/demo/templates/Reveal/assets/img/portfolio/portfolio-1.jpg" width="100%">
+    </div>
+    <div class="col col-md-4 col-sm-6 col-12 grd">
+      <img src="https://bootstrapmade.com/demo/templates/Reveal/assets/img/portfolio/portfolio-2.jpg" width="100%">
+    </div>
+    <div class="col col-md-4 col-sm-6 col-12 grd">
+      <img src="https://bootstrapmade.com/demo/templates/Reveal/assets/img/portfolio/portfolio-3.jpg" width="100%">
+    </div>
+
+    <div class="col col-md-4 col-sm-6 col-12 grd">
+      <img src="https://bootstrapmade.com/demo/templates/Reveal/assets/img/portfolio/portfolio-4.jpg" width="100%">
+    </div>
+    <div class="col col-md-4 col-sm-6 col-12 grd">
+      <img src="https://bootstrapmade.com/demo/templates/Reveal/assets/img/portfolio/portfolio-8.jpg" width="100%">
+    </div>
+    <div class="col col-md-4 col-sm-6 col-12 grd">
+      <img src="https://bootstrapmade.com/demo/templates/Reveal/assets/img/portfolio/portfolio-9.jpg" width="100%">
+    </div>
+
+    <div class="col col-md-4 col-sm-6 col-12 grd">
+      <img src="https://bootstrapmade.com/demo/templates/Reveal/assets/img/portfolio/portfolio-7.jpg" width="100%">
+    </div>
+    <div class="col col-md-4 col-sm-6 col-12 grd">
+      <img src="https://bootstrapmade.com/demo/templates/Reveal/assets/img/portfolio/portfolio-5.jpg" width="100%">
+    </div>
+    <div class="col col-md-4 col-sm-6 col-12 grd">
+      <img src="https://bootstrapmade.com/demo/templates/Reveal/assets/img/portfolio/portfolio-6.jpg" width="100%">
+    </div>
+  </div>
+</div>
+
+<br><br>
+
+<div class="container" style="font-size: 35px; color: darkblue;">
+      <b> TESTIMONIALS </b> <br><br>
+
+      <p style="font-size: 20px; color: black;"><i> Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore </i></p>
+    </div>
+    <br><br>
+
+    <div class="container">
+  <div class="row">
+    <div class="col col-md-4 col-sm-6 col-12 grd">
+      <p> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. </p>
+      <img src="https://bootstrapmade.com/demo/templates/Reveal/assets/img/testimonial-2.jpg" width="40%">
+    </div>
+
+    <div class="col col-md-4 col-sm-6 col-12 grd">
+      <p> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. </p>
+      <img src="https://bootstrapmade.com/demo/templates/Reveal/assets/img/testimonial-4.jpg" width="40%">
+    </div>
+
+    <div class="col col-md-4 col-sm-6 col-12 grd">
+      <p> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. </p>
+      <img src="https://bootstrapmade.com/demo/templates/Reveal/assets/img/testimonial-3.jpg" width="40%">
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+     <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    </body>
+</html>
